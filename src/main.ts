@@ -12,7 +12,7 @@ async function bootstrap() {
   .setDescription('Projeto do blog pessoal')    //descriçao
   .setContact('Generation brasil', 'www.genbr.com.br', 'fcosta.veiga@gmail.com')    //contato
   .setVersion('1.0')      //versao
-  .addBearerAuth()
+  .addBearerAuth()    //é um recurso utilizado para garantir a segurança durante a utilização da API. Ele é gerado na autenticação do usuário e será solicitado diversas vezes durante seu uso da API, ou seja, ele é um token temporario de segurança
   .build()
   const document = SwaggerModule.createDocument(app, config) //ele vai criar um document com os dados de app e config
   SwaggerModule.setup('/swagger', app, document)    //rota

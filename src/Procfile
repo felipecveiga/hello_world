@@ -1,1 +1,5 @@
+// para iniciar a aplicação , quando ele inicia o render
+
+
+
 web: npm run start:prod
